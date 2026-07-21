@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FraudShield AI</title>
+
+    <link rel="icon"
+        type="image/png"
+        href="{{ url_for('static', filename='images/favicon.png') }}">
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- AOS -->
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='css/responsive.css') }}">
+
+</head>
+
+<body>
+
+    <!-- Scroll Progress -->
+
+    <div id="progress-bar"></div>
+
+    <!-- ========================= -->
+    <!-- Navbar -->
+    <!-- ========================= -->
+
+<!-- ========================= -->
+<!-- Navbar -->
+<!-- ========================= -->
+
+<nav>
+
+
+    <div class="logo">
+
+        <i class="fa-solid fa-shield-halved"></i> FraudShield <span>AI</span>
+
+    </div>
+
+
+
+    <ul id="nav-links">
+
+
+        <li>
+            <a href="#hero">
+                Home
+            </a>
+        </li>
+
+
+        <li>
+            <a href="#about">
+                About
+            </a>
+        </li>
+
+
+        <li>
+            <a href="#dataset">
+                Dataset
+            </a>
+        </li>
+
+
+        <li>
+            <a href="#models">
+                Models
+            </a>
+        </li>
+
+
+        <li>
+            <a href="#performance">
+                Performance
+            </a>
+        </li>
+
+
+        <li>
+            <a href="#prediction">
+                Prediction
+            </a>
+        </li>
+
+
+        <li>
+            <a href="#explainability">
+                Explain AI
+            </a>
+        </li>
+
+
+    </ul>
+
+
+
+
+    <!-- Hamburger Button -->
+
+    <div class="hamburger" id="hamburger">
+
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+
+    </div>
+
+
+
+</nav>
+
+    <!-- ========================= -->
+    <!-- Hero -->
+    <!-- ========================= -->
+
+    <section id="hero" class="hero reveal">
+
+        <div class="hero-left"
+            data-aos="fade-right">
+
+            <span class="tag">
+
+                AI Powered Machine Learning
+
+            </span>
+
+            <h1>
+
+                Credit Card
+
+                <span>Fraud Detection</span>
+
+            </h1>
+
+            <p>
+
+                An intelligent fraud detection platform built using
+                Machine Learning and Explainable AI to identify
+                suspicious financial transactions with high precision,
+                helping reduce financial risk and enhance transaction
+                security.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#prediction"
+                    class="btn-primary">
+
+                    Predict Now
+
+                </a>
+
+                <a href="#performance"
+                    class="btn-secondary">
+
+                    View Performance
+
+                </a>
+
+            </div>
+
+            <div class="hero-stats">
+
+                <div class="stat">
+
+                    <h2>284K+</h2>
+
+                    <span>Transactions</span>
+
+                </div>
+
+                <div class="stat">
+
+                    <h2>99.94%</h2>
+
+                    <span>Accuracy</span>
+
+                </div>
+
+                <div class="stat">
+
+                    <h2>98.32%</h2>
+
+                    <span>ROC-AUC</span>
+
+                </div>
+
+                <div class="stat">
+
+                    <h2>3</h2>
+
+                    <span>ML Models</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right"
+            data-aos="fade-left">
+
+            <div class="dashboard-card">
+
+                <div class="card-header">
+
+                    Security Monitor
+
+                </div>
+
+                <div class="risk-circle">
+
+                    96%
+
+                </div>
+
+                <h3>
+
+                    High Risk Transaction
+
+                </h3>
+
+                <div class="status">
+
+                    <span class="dot"></span>
+
+                    Live AI Detection
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ========================= -->
+<!-- About Section -->
+<!-- ========================= -->
+
+<section id="about"class="about reveal">
+
+
+    <div class="section-title"
+    data-aos="fade-up">
+
+        <span>
+            About Project
+        </span>
+
+        <h2>
+            Intelligent Fraud Detection
+        </h2>
+
+        <p>
+            Combining Machine Learning and Explainable AI
+            to secure digital transactions.
+        </p>
+
+    </div>
+
+
+
+    <div class="about-container">
+
+
+        <div class="about-text"
+        data-aos="fade-right">
+
+
+            <h3>
+                AI Powered Financial Security
+            </h3>
+
+
+            <p>
+
+                Credit Card Fraud Detection is a machine
+                learning based security system designed
+                to identify suspicious transactions and
+                reduce financial risks.
+
+            </p>
+
+
+            <p>
+
+                The system analyzes transaction patterns,
+                applies advanced classification algorithms,
+                handles class imbalance using SMOTE,
+                and provides transparent predictions
+                using Explainable AI.
+
+            </p>
+
+
+
+            <div class="tech-stack">
+
+
+                <span>Python</span>
+
+                <span>Flask</span>
+
+                <span>Scikit-Learn</span>
+
+                <span>Random Forest</span>
+
+                <span>SHAP</span>
+
+                <span>Pandas</span>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="about-card"
+        data-aos="fade-left">
+
+
+            <div class="shield">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+
+            <h3>
+
+                Secure AI Monitoring
+
+            </h3>
+
+
+            <p>
+
+                Real-time fraud probability prediction
+                with explainable decision making.
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<!-- ========================= -->
+<!-- Dataset Section -->
+<!-- ========================= -->
+
+
+<section id="dataset"class="dataset reveal">
+
+
+<div class="section-title"
+data-aos="fade-up">
+
+
+<span>
+Dataset Insights
+</span>
+
+
+<h2>
+Understanding The Data
+</h2>
+
+
+<p>
+The model was trained on real transaction records.
+</p>
+
+
+</div>
+
+
+
+
+<div class="dataset-grid">
+
+
+
+<div class="data-card">
+
+<i class="fa-solid fa-database"></i>
+
+<h2 class="counter"
+data-target="284807">
+0
+</h2>
+
+<p>
+Total Transactions
+</p>
+
+</div>
+
+
+
+<div class="data-card">
+
+<i class="fa-solid fa-triangle-exclamation"></i>
+
+<h2 class="counter"
+data-target="492">
+0
+</h2>
+
+<p>
+Fraud Cases
+</p>
+
+</div>
+
+
+
+<div class="data-card">
+
+<i class="fa-solid fa-chart-column"></i>
+
+<h2 class="counter"
+data-target="30">
+0
+</h2>
+
+<p>
+Features
+</p>
+
+</div>
+
+
+
+
+<div class="data-card">
+
+<i class="fa-solid fa-percent"></i>
+
+<h2 class="counter"
+data-target="0.172">
+0
+</h2>
+
+<p>
+Fraud Ratio
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+<!-- ========================= -->
+<!-- Models Section -->
+<!-- ========================= -->
+
+<section id="models"class="models reveal">
+
+
+<div class="section-title"
+data-aos="fade-up">
+
+
+<span>
+Machine Learning Models
+</span>
+
+
+<h2>
+Algorithms Implemented
+</h2>
+
+
+<p>
+Multiple classification algorithms were evaluated
+to identify the best fraud detection model.
+</p>
+
+
+</div>
+
+
+
+
+<div class="models-grid">
+
+
+<!-- Logistic Regression -->
+
+<div class="model-card"
+data-aos="fade-up">
+
+
+<div class="model-icon">
+
+<i class="fa-solid fa-chart-line"></i>
+
+</div>
+
+
+<h3>
+Logistic Regression
+</h3>
+
+
+<p>
+Baseline classification algorithm used
+for initial performance comparison.
+</p>
+
+
+<ul>
+
+<li>Fast Training</li>
+
+<li>Highly Interpretable</li>
+
+<li>Linear Classifier</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<!-- Random Forest -->
+
+<div class="model-card best-model"
+data-aos="fade-up">
+
+
+<div class="badge">
+
+BEST MODEL
+
+</div>
+
+
+<div class="model-icon">
+
+<i class="fa-solid fa-tree"></i>
+
+</div>
+
+
+<h3>
+Random Forest
+</h3>
+
+
+<p>
+Selected final model providing strong
+fraud detection capability.
+</p>
+
+
+<ul>
+
+<li>Ensemble Learning</li>
+
+<li>Handles Complex Patterns</li>
+
+<li>High Recall Performance</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<!-- XGBoost -->
+
+<div class="model-card"
+data-aos="fade-up">
+
+
+<div class="model-icon">
+
+<i class="fa-solid fa-bolt"></i>
+
+</div>
+
+
+<h3>
+XGBoost
+</h3>
+
+
+<p>
+Gradient boosting algorithm tested
+for advanced classification.
+</p>
+
+
+<ul>
+
+<li>Boosted Trees</li>
+
+<li>High Accuracy</li>
+
+<li>Feature Learning</li>
+
+</ul>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+<!-- ========================= -->
+<!-- Performance Section -->
+<!-- ========================= -->
+
+
+<section id="performance" class="performance reveal">
+
+
+<div class="section-title"
+data-aos="fade-up">
+
+
+<span>
+Model Evaluation
+</span>
+
+
+<h2>
+Performance Metrics
+</h2>
+
+
+<p>
+Evaluation based on accuracy, precision,
+recall and F1-score.
+</p>
+
+
+</div>
+
+
+
+
+<div class="metrics-grid">
+
+
+<div class="metric-card">
+
+<h2>
+99.94%
+</h2>
+
+<p>
+Accuracy
+</p>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h2>
+82.47%
+</h2>
+
+<p>
+Precision
+</p>
+
+</div>
+
+
+
+
+<div class="metric-card">
+
+<h2>
+81.63%
+</h2>
+
+<p>
+Recall
+</p>
+
+</div>
+
+
+
+
+<div class="metric-card">
+
+<h2>
+82.05%
+</h2>
+
+<p>
+F1 Score
+</p>
+
+</div>
+
+
+
+<div class="metric-card">
+
+<h2>
+98.32%
+</h2>
+
+<p>
+ROC-AUC
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<div class="comparison-table">
+
+
+<h3>
+Model Comparison
+</h3>
+
+
+
+<table>
+
+
+<tr>
+
+<th>
+Model
+</th>
+
+<th>
+Accuracy
+</th>
+
+<th>
+Precision
+</th>
+
+<th>
+Recall
+</th>
+
+<th>
+F1 Score
+</th>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+Logistic Regression
+</td>
+
+<td>
+99.82%
+</td>
+
+<td>
+75%
+</td>
+
+<td>
+61%
+</td>
+
+<td>
+67%
+</td>
+
+</tr>
+
+
+
+
+<tr class="highlight">
+
+
+<td>
+Random Forest ⭐
+</td>
+
+<td>
+99.94%
+</td>
+
+<td>
+82.47%
+</td>
+
+<td>
+81.63%
+</td>
+
+<td>
+82.05%
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+XGBoost
+</td>
+
+<td>
+99.93%
+</td>
+
+<td>
+80%
+</td>
+
+<td>
+79%
+</td>
+
+<td>
+79.5%
+</td>
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+</section>
+
+<!-- ========================= -->
+<!-- Workflow Section -->
+<!-- ========================= -->
+
+<section id="workflow" class="workflow reveal">
+
+
+<div class="section-title"
+data-aos="fade-up">
+
+
+<span>
+System Workflow
+</span>
+
+
+<h2>
+How Fraud Detection Works
+</h2>
+
+
+<p>
+From raw transaction data to intelligent fraud prediction.
+</p>
+
+
+</div>
+
+
+
+<div class="timeline">
+
+
+<div class="step"
+data-aos="fade-right">
+
+<div class="step-number">
+01
+</div>
+
+<h3>
+Data Collection
+</h3>
+
+<p>
+Transaction data is collected and prepared
+for machine learning analysis.
+</p>
+
+</div>
+
+
+
+<div class="step"
+data-aos="fade-left">
+
+<div class="step-number">
+02
+</div>
+
+<h3>
+Data Preprocessing
+</h3>
+
+<p>
+Normalization, cleaning and imbalance
+handling using advanced techniques.
+</p>
+
+</div>
+
+
+
+
+<div class="step"
+data-aos="fade-right">
+
+<div class="step-number">
+03
+</div>
+
+<h3>
+Model Training
+</h3>
+
+<p>
+Multiple classification algorithms are trained
+and evaluated.
+</p>
+
+</div>
+
+
+
+
+<div class="step"
+data-aos="fade-left">
+
+<div class="step-number">
+04
+</div>
+
+<h3>
+Fraud Prediction
+</h3>
+
+<p>
+Random Forest analyzes transaction patterns
+and generates risk probability.
+</p>
+
+</div>
+
+
+
+
+<div class="step"
+data-aos="fade-right">
+
+<div class="step-number">
+05
+</div>
+
+<h3>
+Explainable AI
+</h3>
+
+<p>
+SHAP explains the factors influencing
+the prediction.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+<!-- ========================= -->
+<!-- Explainability Section -->
+<!-- ========================= -->
+
+
+<section id="explainability" class="explainability reveal">
+
+
+<div class="section-title">
+
+
+<span>
+Explainable AI
+</span>
+
+
+<h2>
+Why Did AI Make This Decision?
+</h2>
+
+
+<p>
+Transparent predictions using SHAP
+model interpretation.
+</p>
+
+
+</div>
+
+
+
+
+<div class="explain-container">
+
+
+
+<div class="explain-card">
+
+
+<i class="fa-solid fa-magnifying-glass-chart"></i>
+
+
+<h3>
+Feature Importance
+</h3>
+
+
+<p>
+Understand which transaction features
+impact fraud probability.
+</p>
+
+
+<img src="{{ url_for('static',
+filename='images/shap_bar.png') }}">
+
+
+</div>
+
+
+
+
+
+<div class="explain-card">
+
+
+<i class="fa-solid fa-brain"></i>
+
+
+<h3>
+Model Transparency
+</h3>
+
+
+<p>
+Visual explanation of individual
+transaction decisions.
+</p>
+
+
+<img src="{{ url_for('static',
+filename='images/shap_waterfall.png') }}">
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+<!-- ========================= -->
+<!-- Prediction Section -->
+<!-- ========================= -->
+
+<section id="prediction" class="prediction reveal">
+
+
+    <div class="section-title">
+
+        <span>AI Prediction</span>
+
+        <h2>
+            Analyze Transaction
+        </h2>
+
+        <p>
+            Enter transaction details and let our
+            Machine Learning model detect fraud risk.
+        </p>
+
+    </div>
+
+
+
+    <div class="prediction-container">
+
+
+        <!-- INPUT CARD -->
+
+        <div class="prediction-card">
+
+
+            <h3>
+                Transaction Details
+            </h3>
+
+
+            <form id="prediction-form">
+
+
+                <div class="input-grid">
+
+
+                    <input 
+                    type="number"
+                    step="any"
+                    id="Time"
+                    placeholder="Transaction Time"
+                    required>
+
+
+                    <input 
+                    type="number"
+                    step="any"
+                    id="Amount"
+                    placeholder="Amount"
+                    required>
+
+
+                </div>
+
+
+
+                <div class="input-grid">
+
+
+                    <div class="input-grid">
+
+                        <input type="number" id="Merchant_Risk" placeholder="Merchant Risk" required>
+
+                        <input type="number" id="Device_Risk" placeholder="Device Risk"required>
+
+                        <input type="number" id="Transaction_Frequency" placeholder="Transaction Frequency" required>
+
+                        <input type="number" id="Location_Risk" placeholder="Location Risk" required>
+                    </div>
+
+                </div>
+
+
+
+                <button 
+                type="submit"
+                class="predict-btn">
+
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                    Detect Fraud
+
+
+                </button>
+
+
+            </form>
+
+
+        </div>
+
+
+
+        <!-- RESULT CARD -->
+
+
+        <div class="result-card"
+        id="result-card">
+
+
+            <div class="security-icon">
+
+                <i class="fa-solid fa-lock"></i>
+
+            </div>
+
+
+            <h2 id="prediction-text">
+
+                Waiting For Analysis
+
+            </h2>
+
+
+
+            <div class="probability">
+
+
+                <span>
+                    Fraud Probability
+                </span>
+
+
+                <h1 id="probability">
+
+                    -- %
+
+                </h1>
+
+
+            </div>
+
+
+
+            <div class="risk-box">
+
+
+                Risk Level:
+
+                <strong id="risk">
+
+                    --
+
+                </strong>
+
+
+            </div>
+
+
+
+            <p>
+
+                Confidence:
+
+                <span id="confidence">
+
+                    --
+
+                </span>
+
+            </p>
+
+
+        </div>
+        <div class="insight-card">
+
+            <h3>
+                AI Decision Insights
+            </h3>
+
+            <ul id="insights-list"></ul>
+
+        </div>
+
+    <div class="summary-card">
+
+    <h2>
+        Transaction Summary
+    </h2>
+
+    <div class="summary-grid">
+
+        <div class="summary-item">
+            <span class="summary-label">💰 Amount</span>
+            <span id="summary-amount">-</span>
+        </div>
+
+        <div class="summary-item">
+            <span class="summary-label">🕒 Time</span>
+            <span id="summary-time">-</span>
+        </div>
+
+        <div class="summary-item">
+            <span class="summary-label">🏪 Merchant Risk</span>
+            <span id="summary-merchant">-</span>
+        </div>
+
+        <div class="summary-item">
+            <span class="summary-label">📍 Location Risk</span>
+            <span id="summary-location">-</span>
+        </div>
+
+        <div class="summary-item">
+            <span class="summary-label">📱 Device Risk</span>
+            <span id="summary-device">-</span>
+        </div>
+
+        <div class="summary-item">
+            <span class="summary-label">🔁 Frequency</span>
+            <span id="summary-frequency">-</span>
+        </div>
+
+    </div>
+
+</div>
+
+
+    </div>
+
+
+</section>
+<section class="history-section reveal">
+
+    <h2 class="section-title">
+        Recent Detection History
+    </h2>
+
+    <div class="history-table">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Time</th>
+
+                    <th>Amount</th>
+
+                    <th>Prediction</th>
+
+                    <th>Risk</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="history-body">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- Footer -->
+<!-- ========================= -->
+
+
+<footer>
+
+
+<div class="footer-content">
+
+
+<h2>
+
+AI Fraud Shield
+
+</h2>
+
+
+<p>
+
+Machine Learning powered credit card fraud
+detection system with Explainable AI.
+
+</p>
+
+
+
+<div class="social-links">
+
+
+<a href="#">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+
+<a href="#">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+
+<a href="#">
+
+<i class="fas fa-envelope"></i>
+
+</a>
+
+
+</div>
+
+
+
+<p class="copyright">
+
+© Credit Card Fraud Detection |
+Built with Python, Flask & Machine Learning.
+
+</p>
+
+
+
+</div>
+
+
+</footer>
+
+    <!-- AOS -->
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+
+        AOS.init({
+
+            duration:1000,
+
+            once:true
+
+        });
+
+    </script>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/prediction.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/animation.js') }}"></script>
+
+</body>
+
+</html>

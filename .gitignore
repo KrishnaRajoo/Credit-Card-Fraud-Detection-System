@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+
+# Large datasets
+data/raw/
+*.csv
+
+# Model files (optional)
+# saved_models/*.pkl
+
+# OS files
+.DS_Store
+Thumbs.db

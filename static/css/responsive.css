@@ -1,0 +1,778 @@
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media(max-width:1100px){
+
+
+    nav{
+
+        padding:20px 5%;
+
+    }
+
+
+    nav ul{
+
+        gap:15px;
+
+    }
+
+
+    #hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        padding-top:150px;
+
+    }
+
+
+    .hero-left{
+
+        width:100%;
+
+    }
+
+
+    .hero-right{
+
+        width:100%;
+
+        margin-top:60px;
+
+    }
+
+
+    .hero-left h1{
+
+        font-size:55px;
+
+    }
+
+
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+
+
+    .hero-stats{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+
+
+    /* About */
+
+
+    .about-container{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+
+    .tech-stack{
+
+        justify-content:center;
+
+    }
+
+
+
+    /* Dataset */
+
+
+    .dataset-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+
+    /* Models */
+
+
+    .models-grid{
+
+        grid-template-columns:1fr;
+
+        max-width:600px;
+
+        margin:auto;
+
+    }
+
+
+
+    /* Metrics */
+
+
+    .metrics-grid{
+
+        grid-template-columns:
+        repeat(3,1fr);
+
+    }
+
+
+
+    /* Prediction */
+
+
+    .prediction-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .input-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+
+    /* Explainability */
+
+
+    .explain-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+
+@media(max-width:700px){
+
+
+body{
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* Navbar */
+
+
+nav{
+
+    padding:18px 5%;
+
+}
+
+
+.logo{
+
+    font-size:22px;
+
+}
+
+
+@media(max-width:700px){
+
+
+
+nav{
+
+
+    position:relative;
+
+
+}
+
+
+
+.hamburger{
+
+
+    display:block;
+
+
+}
+
+
+
+nav ul{
+
+
+    position:absolute;
+
+    top:75px;
+
+    left:5%;
+
+    width:90%;
+
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:15px;
+
+
+    padding:25px 20px;
+
+
+    background:
+
+    rgba(5,5,5,0.95);
+
+
+    border-radius:25px;
+
+
+    border:1px solid #333;
+
+
+    box-shadow:
+
+    0 0 30px rgba(229,9,20,0.25);
+
+
+
+    /* Animation Base State */
+
+    opacity:0;
+
+    visibility:hidden;
+
+
+    transform:
+
+    translateY(-25px)
+    scale(.95);
+
+
+    pointer-events:none;
+
+
+    transition:
+
+    opacity .35s ease,
+
+    transform .35s ease,
+
+    visibility .35s ease;
+
+
+}
+
+nav ul li{
+
+
+    width:100%;
+
+    list-style:none;
+
+
+}
+
+
+
+nav ul li a{
+
+
+    display:block;
+
+
+    width:100%;
+
+
+    text-align:center;
+
+
+    padding:15px 20px;
+
+
+    border-radius:15px;
+
+
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        #050505,
+
+        #050505,
+
+        #050505
+
+    );
+
+
+
+    color:white;
+
+
+    text-decoration:none;
+
+
+    font-weight:500;
+
+
+    border:
+
+    1px solid rgba(255,0,0,0.25);
+
+
+
+    transition:
+
+    .35s ease;
+
+
+}
+
+nav ul li a::before{
+
+
+    content:"";
+
+    display:inline-block;
+
+
+    width:6px;
+
+    height:6px;
+
+
+    background:#E50914;
+
+
+    border-radius:50%;
+
+
+    margin-right:10px;
+
+
+    box-shadow:
+
+    0 0 10px #E50914;
+
+
+}
+
+nav ul li a:hover{
+
+
+    transform:
+
+    translateY(-5px);
+
+
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        #000,
+
+        #ff0000,
+
+        #000
+
+    );
+
+
+
+    box-shadow:
+
+
+    0 0 20px
+
+    rgba(229,9,20,0.6);
+
+
+
+    color:white;
+
+
+}
+
+nav ul.active{
+
+
+    opacity:1;
+
+
+    visibility:visible;
+
+
+    transform:
+
+    translateY(0)
+    scale(1);
+
+
+
+    pointer-events:auto;
+
+
+}
+
+
+
+@keyframes menuSlide{
+
+
+    from{
+
+
+        opacity:0;
+
+        transform:
+
+        translateY(-20px);
+
+
+    }
+
+
+    to{
+
+
+        opacity:1;
+
+        transform:
+
+        translateY(0);
+
+
+    }
+
+
+}
+
+
+}
+
+
+.github-btn{
+
+    padding:10px 16px;
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* Hero */
+
+
+#hero{
+
+    padding:130px 5% 80px;
+
+}
+
+
+
+.hero-left h1{
+
+    font-size:38px;
+
+    line-height:1.2;
+
+}
+
+
+
+.hero-left p{
+
+    font-size:14px;
+
+}
+
+
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+
+
+.btn-primary,
+.btn-secondary{
+
+
+    width:100%;
+
+}
+
+
+
+.dashboard-card{
+
+
+    width:100%;
+
+
+}
+
+
+
+.risk-circle{
+
+
+    width:140px;
+
+    height:140px;
+
+    font-size:35px;
+
+
+}
+
+
+
+/* Stats */
+
+
+.hero-stats{
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+
+/* Sections */
+
+
+section{
+
+    padding:80px 5%;
+
+}
+
+
+
+.section-title h2{
+
+    font-size:32px;
+
+}
+
+
+
+/* About */
+
+
+.about-text h3{
+
+    font-size:28px;
+
+}
+
+
+
+/* Dataset */
+
+
+.dataset-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.data-card h2{
+
+
+    font-size:35px;
+
+
+}
+
+
+
+/* Models */
+
+
+.model-card{
+
+
+    padding:30px;
+
+}
+
+
+
+/* Performance */
+
+
+.metrics-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.comparison-table{
+
+
+    overflow-x:auto;
+
+
+}
+
+
+
+table{
+
+
+    min-width:650px;
+
+
+}
+
+
+
+
+/* Workflow Timeline */
+
+
+.timeline::before{
+
+
+    left:20px;
+
+
+}
+
+
+
+.step,
+.step:nth-child(even){
+
+
+    width:90%;
+
+
+    margin-left:45px;
+
+
+}
+
+
+
+.step-number{
+
+
+    position:relative;
+
+
+}
+
+
+
+
+/* Prediction */
+
+
+.input-grid{
+
+
+    grid-template-columns:1fr;
+
+
+}
+
+
+
+.prediction-card,
+.result-card{
+
+
+    padding:25px;
+
+
+}
+
+
+
+.probability h1{
+
+
+    font-size:45px;
+
+
+}
+
+
+
+/* Explainability */
+
+
+.explain-card img{
+
+
+    height:auto;
+
+
+}
+
+
+
+/* Footer */
+
+
+.footer-content h2{
+
+
+    font-size:30px;
+
+
+}
+
+
+
+}
