@@ -40,6 +40,29 @@
 
 <body>
 
+<div id="loader">
+
+    <div class="loader-box">
+
+        <img
+            src="{{ url_for('static', filename='images/favicon.png') }}"
+            class="loader-logo"
+            alt="Logo">
+
+        <h2><i class="fa-solid fa-shield-halved"></i> FraudShield <span>AI</span></h2>
+
+        <div class="progress-container">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+        <h3 id="progressText">0%</h3>
+
+    </div>
+
+</div>
+
     <!-- Scroll Progress -->
 
     <div id="progress-bar"></div>
@@ -1474,6 +1497,37 @@ Built with Python, Flask & Machine Learning.
         });
 
     </script>
+<script>
+
+let progress = 0;
+
+const text = document.getElementById("progressText");
+const bar = document.getElementById("progressBar");
+const loader = document.getElementById("loader");
+
+const interval = setInterval(() => {
+
+    progress++;
+
+    text.innerHTML = progress + "%";
+
+    bar.style.width = progress + "%";
+
+    if(progress >= 100){
+
+        clearInterval(interval);
+
+        setTimeout(() => {
+
+            loader.classList.add("hide");
+
+        },300);
+
+    }
+
+},20);
+
+</script>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
     <script src="{{ url_for('static', filename='js/prediction.js') }}"></script>
